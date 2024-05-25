@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Content Script test",
+  "version": "0.1",
+  "description": "Content Script test",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["<all_urls>"],
+      "js": ["cs.js"]
+    }
+  ]
+}
